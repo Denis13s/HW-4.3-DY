@@ -11,7 +11,8 @@ import SwiftUI
 struct HW_4_3_DYApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
+                .environmentObject(UserManagerVM())
         }
     }
 }

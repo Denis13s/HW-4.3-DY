@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		04ED2DB92B32ED4D002AFE05 /* HW_4_3_DYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED2DB82B32ED4D002AFE05 /* HW_4_3_DYApp.swift */; };
-		04ED2DBB2B32ED4D002AFE05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED2DBA2B32ED4D002AFE05 /* ContentView.swift */; };
 		04ED2DBD2B32ED4F002AFE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ED2DBC2B32ED4F002AFE05 /* Assets.xcassets */; };
 		04ED2DC02B32ED4F002AFE05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ED2DBF2B32ED4F002AFE05 /* Preview Assets.xcassets */; };
+		04ED2DCF2B32F141002AFE05 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED2DCE2B32F141002AFE05 /* StartView.swift */; };
+		04ED2DD12B32F187002AFE05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED2DD02B32F187002AFE05 /* ContentView.swift */; };
+		04ED2DD52B32F211002AFE05 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED2DD42B32F211002AFE05 /* LogInView.swift */; };
+		04ED2DD72B32F2DB002AFE05 /* UserManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED2DD62B32F2DB002AFE05 /* UserManagerVM.swift */; };
+		04ED2DD92B32F3F3002AFE05 /* TimerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED2DD82B32F3F3002AFE05 /* TimerVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04ED2DB52B32ED4D002AFE05 /* HW-4.3-DY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW-4.3-DY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ED2DB82B32ED4D002AFE05 /* HW_4_3_DYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_4_3_DYApp.swift; sourceTree = "<group>"; };
-		04ED2DBA2B32ED4D002AFE05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04ED2DBC2B32ED4F002AFE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ED2DBF2B32ED4F002AFE05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04ED2DCE2B32F141002AFE05 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		04ED2DD02B32F187002AFE05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04ED2DD42B32F211002AFE05 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		04ED2DD62B32F2DB002AFE05 /* UserManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerVM.swift; sourceTree = "<group>"; };
+		04ED2DD82B32F3F3002AFE05 /* TimerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,10 @@
 		04ED2DB72B32ED4D002AFE05 /* HW-4.3-DY */ = {
 			isa = PBXGroup;
 			children = (
-				04ED2DB82B32ED4D002AFE05 /* HW_4_3_DYApp.swift */,
-				04ED2DBA2B32ED4D002AFE05 /* ContentView.swift */,
-				04ED2DBC2B32ED4F002AFE05 /* Assets.xcassets */,
 				04ED2DBE2B32ED4F002AFE05 /* Preview Content */,
+				04ED2DDC2B32F884002AFE05 /* App */,
+				04ED2DDB2B32F87D002AFE05 /* Views */,
+				04ED2DDA2B32F873002AFE05 /* ViewModels */,
 			);
 			path = "HW-4.3-DY";
 			sourceTree = "<group>";
@@ -62,9 +70,45 @@
 		04ED2DBE2B32ED4F002AFE05 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				04ED2DDD2B32F88D002AFE05 /* Resources */,
 				04ED2DBF2B32ED4F002AFE05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04ED2DDA2B32F873002AFE05 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04ED2DD62B32F2DB002AFE05 /* UserManagerVM.swift */,
+				04ED2DD82B32F3F3002AFE05 /* TimerVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		04ED2DDB2B32F87D002AFE05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04ED2DCE2B32F141002AFE05 /* StartView.swift */,
+				04ED2DD42B32F211002AFE05 /* LogInView.swift */,
+				04ED2DD02B32F187002AFE05 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04ED2DDC2B32F884002AFE05 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04ED2DB82B32ED4D002AFE05 /* HW_4_3_DYApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04ED2DDD2B32F88D002AFE05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04ED2DBC2B32ED4F002AFE05 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ED2DBB2B32ED4D002AFE05 /* ContentView.swift in Sources */,
+				04ED2DD52B32F211002AFE05 /* LogInView.swift in Sources */,
+				04ED2DD72B32F2DB002AFE05 /* UserManagerVM.swift in Sources */,
 				04ED2DB92B32ED4D002AFE05 /* HW_4_3_DYApp.swift in Sources */,
+				04ED2DCF2B32F141002AFE05 /* StartView.swift in Sources */,
+				04ED2DD92B32F3F3002AFE05 /* TimerVM.swift in Sources */,
+				04ED2DD12B32F187002AFE05 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
